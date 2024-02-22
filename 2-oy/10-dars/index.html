@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>10-dars</title>
+</head>
+<body>
+    <form class="contact-us" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
+        <label>
+            <strong> Yoshinggizni kiriting</strong>
+            <input class="form-input" value="" type="text" placeholder="Isminggizni kiriting" name="user_name" autocomplete="off" required>
+        </label>
+       
+        <label>
+            <span>Yoshinggizni kiriting</span>
+            <input value="" type="email" placeholder="Email kiriting" name="user_email" required>
+        </label>
+       
+        <div style="display: flex;">
+            <input minlength="13" aria-label="Yoshinggizni kiriting" maxlength="13" required value="+998" type="tel" placeholder="Telefon raqam kiriting" name="user_phone" autocomplete="off">
+    
+            <input value="" min="18" max="30" required  type="number" placeholder="Yoshinggizni kiriting" name="user_age" autocomplete="off">
+        </div>
+        
+        <input value="" type="password" placeholder="Parol kiriting" name="user_password" autocomplete="off">
+        
+        <input value="" type="search" placeholder="Ma'lumot qidiring" name="user_searching" autocomplete="off">
+        
+        <label>
+            <img src="https://picsum.photos/id/58/70/30" alt="">
+            <input class="visually-hidden" accept="image/png, .doc, .docx,.xlsx" type="file"  name="user_file">
+        </label>
+        
+        <input checked name="user_check" type="checkbox">
+        
+        <input name="user_check" type="checkbox">
+        
+        <input type="radio" name="user_radio">
+        
+        <input type="radio" name="user_radio">
+        
+        <input type="date" name="user_birth">
+        
+        <input type="color" name="user_face_color">
+        
+        <select name="user_select">
+            <option disabled value="olma">Olma</option>
+            <option value="anor">Anor</option>
+            <option value="olcha">Olcha</option>
+        </select>
+        <!-- <input type="submit" value="Jo'natish"> -->
+        <button type="submit">Jo'natish</button>
+    </form>
+</body>
+</html>

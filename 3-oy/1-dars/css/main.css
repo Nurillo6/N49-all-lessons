@@ -1,0 +1,183 @@
+
+textarea{
+    resize: horizontal;
+}
+
+.wrap{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 200px auto;
+    background-color: teal;
+}
+
+.wrap:hover::after{
+    border-radius: 50%;
+    background-color: blue;
+}
+
+.wrap::after{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: border-radius 0.5s, background-color 5s;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin:  auto;
+}
+
+.wrapper-top{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    background-color: indianred;
+
+    .inner-wrapper{
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        /* right: calc(49% + 3px); */
+        /* left: 0; */
+        /* bottom: calc(50% + 100px); */
+        /* background-position-x: calc(50% + 50px);
+        background-position-y: calc(50% + 50px); */
+        /* top: 0; */
+        /* margin: auto; */
+        border-radius: 50%;
+        background-color: blue;
+
+            .last-wrapper{
+                position: absolute;
+                right: 0;
+                width: 150px;
+                height: 150px;
+                background-color: green;
+                border-radius: 50%;
+            }
+    }
+}
+
+
+.card{
+    width: 100px;
+    padding: 20px;
+    margin: 10px;
+    background-color: grey;
+}
+
+.demo-wrap:hover > .card{
+    width: 100%;
+}
+
+.card:nth-child(1){
+    background-color: red;
+
+    /* transition-property:width;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 1s; */
+
+    transition: width 1s ease;
+}
+.card:nth-child(2){
+    background-color: blue;
+    transition: width 1s ease-in ;
+}
+.card:nth-child(3){
+    background-color: gold;
+    transition: width 1s ease-in-out ;
+}
+.card:nth-child(4){
+    background-color: green;
+    transition: width 1s ease-out;
+}
+.card:nth-child(5){
+    background-color: pink;
+    transition: width 1s linear;
+}
+.card:nth-child(6){
+    background-color:violet;
+    transition: width 1s step-end ;
+}
+.card:nth-child(7){
+    background-color: blueviolet;
+    transition: width 1s step-start;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.site-header {
+    padding: 27px 0 12px;
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo-link {
+    display: inline-block;
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+}
+.header__navbar {
+    margin-right: 232px;
+}
+.navbar{
+    color: black;
+
+    &::before{
+        content: "Bu Navbar ";
+    }
+    &::after{
+
+    }
+    &:focus{
+
+    }
+    &::placeholder{
+
+    }
+    &:hover{
+        background-color: teal;
+    }
+
+    &:active{}
+
+}
+
+.navbar__list {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__item + .navbar__item  {
+    margin-left:40px;
+}   
+.navbar__link {
+    color: black;
+}
+.header__get-started-link {
+}

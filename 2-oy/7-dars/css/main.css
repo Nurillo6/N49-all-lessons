@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.container{
+    width: 1250px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+body{
+    background-color: black;
+}
+/* .title-name{ */
+    /* font-weight: 600; */
+    /* letter-spacing: 5px; */
+    /* line-height: 30px; */
+    /* font-size: 20px; */
+    /* color: white; */
+    /* } */
+    
+    
+    .card{
+        margin: 50px;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: lightblue;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.4s;
+    }
+    
+    .card:hover{
+        background-color: brown;
+        color: white;
+        border-radius: 50%;
+        margin-left: 200px;
+    }
+    .link{
+        width: 200px;
+        display: inline-block;
+        text-align: center;
+        padding: 15px 0;
+        color: white;
+        font-family: Mulish;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height:30px;
+        border-radius: 55px;
+        background-color: #458FF6;
+        border: 1.4px solid #458FF6;
+        transition: all 0.4s;
+    }
+    /* .link:hover{
+        background-color: #458FF6;
+        color: white;
+    } */
+    .link:hover{
+        background-color: transparent;
+        color: #458FF6;
+    }
+
+    .list{
+        margin-top: 150px;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .item{
+        width: 200px;
+        height: 200px;
+        background-color: grey;
+    }
+
+    .item:nth-child(odd){
+     
+        border-radius: 50%;
+    }
+
+    .item1{
+        background-color: blueviolet;
+    }
+    .item2{
+        background-color: green;
+    }
+    .item3{
+        background-color: blue;
+    }
+    .item4{
+        background-color: gold;
+    }
+
+
+    .hello1{
+        color: white;
+        font-family: serif;
+    }
+
+    .hello2{
+        font-family:  sans-serif;
+    }

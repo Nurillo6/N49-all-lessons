@@ -1,0 +1,45 @@
+body{
+    background-color: #222;
+}
+
+/* 1.translate */
+/* 2.rotate */
+/* 2.scale */
+/* 2.skew */
+
+.card{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: teal;
+    margin: 200px auto;
+    border-radius: 10px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    transition: transform 0.4s linear 0s, background-color 1s linear 1s;
+}
+
+.card:hover{
+    /* transform: translateX(50px);
+    transform: translateY(50px); */
+    /* transform: translate(50px, 100px); */
+    /* transform: rotateX(180deg);
+    transform: rotateY(45deg); */
+    /* transform: rotate(90deg); */
+    /* transform: scaleX(2);
+    transform: scaleY(2); */
+    /* transform: scale(2); */
+    /* transform: skewX(-45deg);
+    transform: skewY(-45deg); */
+    /* transform: skew(45deg, 20deg); */
+    transform: rotate(45deg);
+    background-color: blueviolet;
+    /* transform: matrix(0,0,0,0,0); */
+}
+/* scale
+rotate
+skew
+translate */

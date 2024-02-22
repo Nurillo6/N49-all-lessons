@@ -1,0 +1,41 @@
+/* 
+.title{
+    background-color: blue;
+    text-align: center;
+    color: white;
+}
+
+.list{
+    list-style: none;
+}
+.link{
+    color: brown;
+    text-decoration: none;
+}
+.link-color{
+    color: white;
+    background-color: blue;
+    border: 1px solid black;
+    border-radius: 10px;
+} */
+
+body{
+    background-color: #E6776C;
+}
+.heading{
+    color: white;
+    text-align: center;
+}
+.list, .inner-list{
+    list-style: none;
+}
+
+.item{
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+.inner-link{
+    text-decoration: none;
+    color: #E6776C;
+}

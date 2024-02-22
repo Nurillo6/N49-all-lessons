@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.container{
+    width: 1250px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.demo{
+    /* width: 800px; */
+    margin: 100px auto;
+    padding: 20px;
+    display: flex;
+    background-color: blueviolet;
+    border-radius: 20px;
+    gap: 10px;
+}
+.card{
+    padding: 20px;
+    flex-basis: auto;
+    border-radius: 10px;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.card1{
+    order: 1;
+    flex-grow: 1;
+    /* flex-shrink: 0; */
+}
+.card2{
+    order: 2;
+    flex-grow: 1;
+    /* flex-shrink: 4; */
+}
+.card3{
+    order: 3;
+    flex-grow: 1;
+    /* flex-shrink: 1; */
+}
+.card4{
+    order: 4;
+    flex-grow: 1;
+    /* flex-shrink: 0; */
+}
+
+.random-img{
+    object-fit: cover;
+}
+
+.square{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 200px auto;
+    background-color: red;
+    border-radius: 20px;
+    box-shadow: inset 20px 20px 100px 20px black    ;
+}
+.square:hover{
+    box-shadow:  20px 20px 100px 20px black;
+}
+
+body{
+    background-image: url("../images/bg.png");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: calc(50% - 650px) calc(50% + 10px);
+}

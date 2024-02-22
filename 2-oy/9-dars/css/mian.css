@@ -1,0 +1,91 @@
+::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: red; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: blue; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: yellow; 
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-y: hidden;
+}
+.warpper{
+    display: flex;
+}
+/* .inner-wrapper1{
+    width: 30%;
+    height: 100vh;
+    background-color: violet;
+    overflow-y: auto;
+}
+.inner-wrapper2{
+    width: 70%;
+    height: 100vh;
+    background-color: gold;
+    overflow-y: auto;
+} */
+
+/* 1rem = 16px */
+/* 1em = otasi font-size teng */
+
+.content{
+    font-size: 20px;
+    width: 320px;
+    padding: 20px;
+    background-color: brown;
+    box-shadow: 5rem 1rem gold;
+}
+.content h2{
+    color: green;
+}
+.content-card ~ h2{
+    color: yellow;
+}
+.item + .item {
+    color: red;
+    margin-top: 10px;
+}
+
+#item3{
+    font-weight: bold;
+    color: blue;
+}
+
+
+/* [href^="tel:"]{
+    color: chartreuse;
+    text-decoration: none;
+} */
+/* [href^="mailto:"]{
+    color: chartreuse;
+    text-decoration: none;
+} */
+/* [href^="https:"]{
+    color: chartreuse;
+    text-decoration: none;
+} */
+
+
+.text{
+    display: inline-block;
+    padding-bottom: 2px;
+    border-bottom: 2px solid black;
+}
+
+p ~ span{
+    color: red;
+}
